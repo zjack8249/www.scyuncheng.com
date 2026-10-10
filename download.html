@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{pboot:if('{sort:name}'=='')}{pboot:pagetitle}{else}{sort:name}{/pboot:if}-Scyuncheng China CNG LPG kit,china CNG LPG kit manufacturer,china CNG LPG kit supplier</title>
+<meta name="keywords" content="{pboot:if('{sort:keywords}'=='')}{pboot:pagekeywords}{else}{sort:keywords}{/pboot:if}">
+<meta name="description" content="{pboot:if('{sort:description}'=='')}{pboot:pagedescription}{else}{sort:description} {sort:name} {page:current}{/pboot:if}">
+<link href="{pboot:sitedomain}/skin/css/swiper.css" rel="stylesheet" media="screen" type="text/css">
+<link href="{pboot:sitedomain}/skin/css/style.css" rel="stylesheet" media="screen" type="text/css">
+<link href="{pboot:sitedomain}/skin/css/list.css" rel="stylesheet" media="screen" type="text/css">
+<link href="{pboot:sitedomain}/skin/css/content.css" rel="stylesheet" media="screen" type="text/css">
+<link href="{pboot:sitedomain}/skin/css/main.css" rel="stylesheet" media="screen" type="text/css">
+<link rel="canonical" href="{pboot:pageurl}" />
+</head>
+<body>
+<script src="{pboot:sitedomain}/skin/js/jquery.min.js" type="text/javascript"></script> 
+{include file=head.html}
+<main>
+  {pboot:sort scode={sort:tcode}}
+  <div class="banner-inner"> <img src="[sort:pic]" width="100%" class="innerbanners">
+    <div class="banner-content">
+      <div class="container">
+        <h1 class="banner-title" style="font-size: 18px;">[sort:name]</h1>
+        <div class="banner-breadcrumbs">{pboot:position indextext=HOME}</div>
+      </div>
+    </div>
+  </div>
+  {/pboot:sort}
+  <section class="common-main document-main" style="background: #f4f4f4;">
+    <div class="l-wrap feedback">
+  <div class="ny-nrbox clearfloat">
+  <div class="w1450px rquest clearfloat">
+    <h2 class="ttile2">Please leave the product information you want to learn more!</h2>
+    <form  action="{pboot:msgaction}"  method="post">
+    <div class="input-group clearfloat">
+      <div class="fl inputl">
+        <input type="text" name="name" id="name" value="" placeholder="Your Name *" />
+      </div>
+      <div class="fr inputr">
+        <input type="text" name="email" id="email" value="" placeholder="Your Email Address *" />
+      </div>
+    </div>
+    <div class="input-group clearfloat">
+      <div class="fl inputl">
+        <input type="text" name="tel" id="y3" value="" placeholder="Tel & Cell" />
+      </div>
+      <div class="fr inputr">
+        <input type="text" name="pro" id="y4" value="" placeholder="Product" />
+      </div>
+    </div>
+    <div class="input-group clearfloat">
+      <div class="textareabox">
+        <textarea rows="" name="content" cols="" placeholder="Content"></textarea>
+      </div>
+    </div>
+    <div class="input-group clearfloat">
+      <div class="input02">
+        <input type="text" name="checkcode" placeholder="Verification Code*" />
+        <div class="abs-yzm"> <img   title="Refresh"  src="{pboot:checkcode}" onclick="this.src='{pboot:checkcode}?'+Math.round(Math.random()*10);" /> </div>
+      </div>
+    </div>
+    <div class="input-group clearfloat">
+      <div class="btn-box">
+        <button type="submit" class="btn btn1" id="tj">Submit</button>
+        <button type="reset"  class="btn btn2">Reset</button>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+  
+      <form >
+
+    NAME:<input type="text" name="name" >
+
+    TEL：<input type="text" name="tel" >
+
+    EMAIL*：<input type="text" name="email" >
+
+    CONTENT*：<input type="text" name="content" >
+
+    CODE:<input type="text" name="checkcode" ><img   title="Refresh"  src="{pboot:checkcode}" onclick="this.src='{pboot:checkcode}?'+Math.round(Math.random()*10);" />
+
+    <button type="submit">SUBMIT</button>
+
+</form>
+    </div>
+    <!-- {pboot:if({page:rows}>0)}
+        <div class="pagebar">
+        <div class="pagination">
+        <a class="page-item page-link hidden-sm" href="{page:index}" title="HOME">HOME</a>
+        {page:numbar}
+        <a class="page-item page-link" href="javascript:;" title="">{page:current}/{page:count}</a>
+        <a class="page-item page-link hidden-sm" href="{page:last}" title="END">END</a>
+        </div>
+        </div>	
+        {else}
+        <div class="tac text-secondary">NO DATA!</div>
+        {/pboot:if} -->
+  </section>
+</main>
+{include file=foot.html}
+</body>
+</html>

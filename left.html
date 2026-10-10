@@ -1,0 +1,42 @@
+<aside class="sidebar">
+          <div class="sidebar-item search">
+            <form method="get" action="{pboot:scaction}">
+              <div class="sidebar-search">
+                <input type="text" name="keyword" id="keyword" placeholder="Search...">
+                <button class="search-btn" type="submit"><em class="iconfont icon-search"></em></button>
+              </div>
+            </form>
+          </div>
+          <div class="sidebar-item category">
+            <p class="sidebar-title">{sort:topname}</p>
+            <ul class="sidebar-cate">
+              {pboot:nav num=50 parent={sort:tcode}}
+              <li class="menu-item LiLevel1 {pboot:if('[nav:scode]'=='{sort:scode}')}active{/pboot:if}"> <a href="[nav:link]">[nav:name]</a> <em class="iconfont icon-xiangyoujiantou"></em></li>
+              {/pboot:nav}
+            </ul>
+          </div>
+          {pboot:sort scode=8}
+          <div class="sidebar-item recent-news">
+            <p class="sidebar-title">Latest News</p>
+            <ul class="recentnews-list">
+              {pboot:list scode=[sort:scode] num=5 order=sorting}
+              <li><a href="[list:link]" class="line3"><em class="iconfont icon-xiangyoujiantou"></em>[list:title]</a></li>
+              {/pboot:list}
+            </ul>
+          </div>
+          {/pboot:sort}
+          {pboot:sort scode=2}
+          <div class="sidebar-item recommended">
+            <p class="sidebar-title">Latest Product</p>
+            <ul class="sidebar-prolist">
+              {pboot:list scode=[sort:scode] num=5 order=sorting}
+              <li> <a href="[list:link]"><img data-src="[list:ico]" class="lazy" alt="[list:title]"></a>
+                <div> <a href="[list:link]" class="line2">[list:title]</a>
+                  <p class="line2">[list:description lencn=40]</p>
+                </div>
+              </li>
+              {/pboot:list}
+            </ul>
+          </div>
+          {/pboot:sort}
+        </aside>

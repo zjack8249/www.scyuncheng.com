@@ -1,0 +1,234 @@
+<footer>
+
+  <div class="l-wrap">
+    <div class="foot-main">
+      <div class="foot-info">
+        <div class="foot-tel">Tel: {pboot:companyphone}<br>
+          E-mail: <a href="mailto:{pboot:companyemail}" target="_blank" id="A_1">{pboot:companyemail}</a></div>
+          <div>
+               <div style="margin-top:10px;">
+             <div class="foot-title">WhatsApp</div>
+          <div class="foot-qrimg"><img src="https://www.scyuncheng.com/WhatsApp.png" width="100" height="100" loading="lazy"
+              class="ErWeiImg" alt="WhatsApp"></div>
+          </div>
+          </div>
+        <div class="foot-share">
+          <ul>
+            <li><a href="https://www.facebook.com/sandy.zhao.9022" class="social-item fb"  target="_blank" rel="noopener"
+                title="Facebook"><i class="iconfont icon-facebook"></i></a></li>
+            <li><a href="https://x.com/SandyYunch93767" class="social-item tw"  target="_blank" rel="noopener" title="twitter"><i
+                  class="iconfont icon-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/sandy-yuncheng-b6281638a" class="social-item lk"  target="_blank" rel="noopener" title="linkedin"><i
+                  class="iconfont icon-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/yunchengsandy/" class="social-item ins"  target="_blank" rel="noopener" title="instagram"><i
+                  class="iconfont icon-instagram"></i></a></li>
+          </ul>
+        
+        </div>
+
+      </div>
+      <div class="foot-nav">
+        <div class="foot-item foot-quick">
+          <div class="foot-title">Quick Navigation</div>
+          <ul class="foot-list">
+            <li id="li_Menu101_MainHome"> <a href="{pboot:sitedomain}/">HOME</a></li>
+           
+            {pboot:nav}
+            <li><a href="[nav:link]" class="inmenu">[nav:name]</a></li>
+            {/pboot:nav}
+   <li>  <a href="/technical-documents-project-support/" title="CNG LPG Technical Documents and Project Support">
+    Technical Documents
+  </a></li>
+    <li>  <a href="/applications-project-reference/" title="CNG LPG Technical Documents and Project Support">
+    Applications & Project Reference
+  </a></li>
+          </ul>
+        </div>
+        {pboot:sort scode=2}
+        <div class="foot-item foot-cate">
+          <div class="foot-title">[sort:name]</div>
+          <ul class="foot-list">
+            {pboot:nav parent={sort:tcode} parent=2 num=8}
+            <li><a href="[nav:link]">[nav:name]</a></li>
+            {/pboot:nav}
+          </ul>
+        </div>
+        {/pboot:sort}
+        <div class="foot-item foot-code">
+          <div class="foot-title">WeChat</div>
+          <div class="foot-qrimg"><img src="{pboot:companyweixin}" width="180" height="180" loading="lazy"
+              class="ErWeiImg" alt="WeChat"></div>
+         
+        </div>
+      </div>
+   
+    </div>
+
+    <div style="text-align:left;width: 100%;line-height:35px;">
+   <div class="font-size:14px">
+    LINK:
+        {pboot:link num=20 gid=1}
+        <a href="[link:link]" target="_blank" style="margin-right: 5px;"  rel="noopener">
+          [link:name]
+        </a>
+        {/pboot:link}
+      </div>
+    </div>
+    <div class="copyright">
+      <p style="color: #939393;">{pboot:sitecopyright}
+        <a href="https://beian.miit.gov.cn/" rel="nofollow">蜀ICP备17038485号-1</a>
+       <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51011402000284" rel="nofollow">川公网安备 51011402000284号</a>
+       <a target="_blank" href="https://www.scyuncheng.com/sitemap.xml"
+          style="color: #939393;">
+          Sitemap
+        </a>
+      </p>
+      <div class="gotop"><em class="iconfont icon-xiangshang"></em></div>
+
+    </div>
+
+    <div style="clear: both;"></div>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </div>
+  </div>
+  <div class="bottom-btn">
+    <div class="btn-item"><a href="https://api.whatsapp.com/send?l=en&phone={label:Whatsapp}" id="M8" 
+        target="_blank" title="whatsapp"><em class="iconfont icon-whatsapp"></em>
+        <p>whatsapp</p>
+      </a></div>
+    <div class="btn-item"><a href="skype:{label:skype}" id="M7" target="_blank" title="skype"><em
+          class="iconfont icon-skype"></em>
+        <p>Skype</p>
+      </a></div>
+    <div class="btn-item"><a href="mailto:{pboot:companyemail}" id="M9" title="Email"><em
+          class="iconfont icon-email"></em>
+        <p>Email</p>
+      </a></div>
+    <div class="company_subscribe btn-item inquiry"><a href="javascript:;" class="button"><em
+          class="iconfont icon-message"></em>
+        <p>Inquiry</p>
+      </a></div>
+  </div>
+</footer>
+<div id='ab-mkf'>
+  <ul class='ab-list'>
+    <li class='ab-skype'><a href="https://www.scyuncheng.com/es/" hreflang="es" aria-label="Spanish">
+        <p style="padding:5px;">ES</p>
+      </a></li>
+    <li class='ab-email'><a href="https://www.scyuncheng.com/ru/" hreflang="ru" aria-label="Russian">
+        <p style="padding:5px;">RU</p>
+      </a></li>
+    <li class='ab-wechat'><a href="https://www.scyuncheng.com/cn/" hreflang="cn" aria-label="Chinese">
+        <p style="padding:5px;">EN</p>
+      </a>
+    </li>
+  </ul>
+</div>
+<script language="javascript" type="text/javascript" src="{pboot:sitedomain}/skin/js/jquery-3.7.0.min.js"></script>
+<script language="javascript" type="text/javascript" src="{pboot:sitedomain}/skin/js/swiper.js"></script>
+<script language="javascript" type="text/javascript" src="{pboot:sitedomain}/skin/js/lazyload.js"></script>
+<div class="inquiry-pop-bd">
+  <div class="inquiry-pop"><i class="ico-close-pop" onclick="hideMsgPop();"></i>
+    <div class="content-wrap form"
+      style="min-width:280px;min-height:420px;width:100%;height:100%;background:transparent;border:none;outline:none;margin:0;padding:0;box-shadow: 0 0 10px rgb(0,0,0,.1);overflow: hidden;">
+      <div class="ch_form_wrap">
+        <div class="email_point"> </div>
+        <h2 class="title"><em>Leave Your Message</em> </h2>
+        <div class="ab_input" style="padding:15px;text-align:center;">
+          <p style="margin:0 0 14px;font-size:14px;line-height:1.6;color:#333;">
+            For a faster response, contact us directly via WhatsApp or WeChat:
+          </p>
+          <div style="display:flex;justify-content:center;gap:24px;flex-wrap:wrap;">
+            <div style="text-align:center;">
+              <img src="https://www.scyuncheng.com/WhatsApp.png" alt="WhatsApp QR Code" style="width:150px;height:auto;border:1px solid #eee;border-radius:8px;display:block;">
+              <p style="margin:8px 0 0;font-size:13px;color:#666;font-weight:600;">WhatsApp</p>
+            </div>
+            <div style="text-align:center;">
+              <img src="https://www.scyuncheng.com/static/upload/image/20250804/1754317716925658.png" alt="WeChat QR Code" style="width:150px;height:auto;border:1px solid #eee;border-radius:8px;display:block;">
+              <p style="margin:8px 0 0;font-size:13px;color:#666;font-weight:600;">WeChat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--右下角留言弹窗-->
+<div class="ab_message">
+  <div class="message-header"> <span class="label"> <i class="fa fa-commenting-o"></i> </span> <b>Leave a message</b>
+    <span class="arrow-toggle"> <i class="fa fa-angle-up"></i> </span>
+  </div>
+  <div class="message-form">
+    <div class="ab_input" style="padding:15px;text-align:center;">
+      <p style="margin:0 0 14px;font-size:14px;line-height:1.6;color:#333;">
+        For a faster response, contact us directly via WhatsApp or WeChat:
+      </p>
+      <div style="display:flex;justify-content:center;gap:24px;flex-wrap:wrap;">
+        <div style="text-align:center;">
+          <img src="https://www.scyuncheng.com/WhatsApp.png" alt="WhatsApp QR Code" style="width:150px;height:auto;border:1px solid #eee;border-radius:8px;display:block;">
+          <p style="margin:8px 0 0;font-size:13px;color:#666;font-weight:600;">WhatsApp</p>
+        </div>
+        <div style="text-align:center;">
+          <img src="https://www.scyuncheng.com/static/upload/image/20250804/1754317716925658.png" alt="WeChat QR Code" style="width:150px;height:auto;border:1px solid #eee;border-radius:8px;display:block;">
+          <p style="margin:8px 0 0;font-size:13px;color:#666;font-weight:600;">WeChat</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--右下角留言弹窗END-->
+<style>
+/* 手机端：二维码留言面板定位在底部固定栏上方（默认仍隐藏，由JS点击Inquiry时展开） */
+@media (max-width:768px){
+  .ab_message{left:10px;right:10px;max-width:none;bottom:calc(66px + constant(safe-area-inset-bottom));bottom:calc(66px + env(safe-area-inset-bottom));}
+}
+</style>
+<script language="javascript" type="text/javascript" src="{pboot:sitedomain}/skin/js/guestbook.js"></script>
+<link href="{pboot:sitedomain}/skin/css/guestbook.css" rel="stylesheet" media="screen" type="text/css">
+<link href="{pboot:sitedomain}/skin/css/font-awesome.min.css" rel="stylesheet" media="screen" type="text/css">
+<script language="javascript" type="text/javascript" src="{pboot:sitedomain}/skin/js/page.js"></script>
+<script>
+  $(function () {
+    // 手机端：点击底部 Inquiry(Leave a message) 改为展开 WhatsApp/微信二维码面板，与电脑端一致；电脑端保持弹出留言表单
+    $('.company_subscribe .button').off('click').on('click', function (e) {
+      e.stopPropagation();
+      if ($(window).width() <= 768) {
+        e.preventDefault();
+        $('.inquiry-pop-bd').stop(true, true).hide();
+        $('.ab_message').css('display', 'block');
+        $('.ab_message .message-form').stop(true, true).slideDown('fast');
+        $('.ab_message').addClass('ab_message-toggle');
+        $('.ab_message .message-header .arrow-toggle i').removeClass('fa-angle-up').addClass('fa-angle-down');
+      } else {
+        $('.inquiry-pop-bd').fadeIn('fast');
+      }
+    });
+    // 手机端点击二维码面板外部时收起整个面板（清除inline display，恢复CSS对各端的控制）
+    $(document).on('click', function () {
+      if ($(window).width() <= 768) $('.ab_message').css('display', '');
+    });
+    $('#tj').click(function () {
+      //alert(1)
+      if ($('#name').val() == '') { alert('Please enter your name!'); $("#name").focus(); return false; }
+
+      if ($("#email").val() == "") { alert("Please enter your email address!"); return false; }
+      if (!$("#email").val().match(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/)) { alert("The email format is incorrect!"); $("#email").focus(); return false; }
+      if ($('#tel').val() == '') { alert('Please enter your mobile phone!'); $("#tel").focus(); return false; }
+      if ($('#checkcode').val() == '') { alert('Please enter the verification code!'); $("#checkcode").focus(); return false; }
+    })
+  })
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EMF0FZ3K5X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-EMF0FZ3K5X');
+</script>
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"Ku32G3AJM98z5B5B",ck:"Ku32G3AJM98z5B5B"})</script>
+
+
+

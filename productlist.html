@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{sort:subname} | Page {page:current}</title>
+<meta name="keywords" content="{pboot:pagekeywords}">
+<meta name="description" content="{sort:description} Page {page:current}">
+<link href="{pboot:sitedomain}/skin/css/swiper.css" rel="stylesheet" media="screen" type="text/css">
+<link href="{pboot:sitedomain}/skin/css/style.css?v=20260920" rel="stylesheet" media="screen" type="text/css">
+<link href="{pboot:sitedomain}/skin/css/list.css?v=20260920" rel="stylesheet" media="screen" type="text/css">
+<link href="{pboot:sitedomain}/skin/css/content.css?v=20260920" rel="stylesheet" media="screen" type="text/css">
+<link rel="canonical" href="{pboot:pageurl}" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.scyuncheng.com/#website",
+      "url": "https://www.scyuncheng.com/",
+      "name": "SCYUNCHENG",
+      "publisher": {
+        "@id": "https://www.scyuncheng.com/#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.scyuncheng.com/#organization",
+      "name": "Sichuan Yuncheng Vehicle Gas Equipment Co., Ltd.",
+      "alternateName": "SCYUNCHENG",
+      "url": "https://www.scyuncheng.com/",
+      "description": "Manufacturer of CNG and LPG vehicle conversion systems and automotive gas components.",
+      "email": "sales@scyuncheng.com",
+      "telephone": "+86-186-2808-8808"
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "{pboot:pageurl}#webpage",
+      "url": "{pboot:pageurl}",
+      "name": "{sort:title}",
+      "description": "{sort:description}",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://www.scyuncheng.com/#website"
+      },
+      "about": {
+        "@id": "https://www.scyuncheng.com/#organization"
+      },
+      "breadcrumb": {
+        "@id": "{pboot:pageurl}#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "{pboot:pageurl}#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.scyuncheng.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Products",
+          "item": "https://www.scyuncheng.com/products/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{sort:name}",
+          "item": "{pboot:pageurl}"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<script src="{pboot:sitedomain}/skin/js/jquery.min.js" type="text/javascript"></script> 
+{include file=head.html}
+<main>
+  {pboot:sort scode={sort:tcode}}
+  <div class="banner-inner"> <img src="[sort:pic]" width="100%" class="innerbanners" alt="[sort:name] - Yuncheng">
+    <div class="banner-content">
+      <div class="container">
+        <h2 class="banner-title" style="font-size: 18px;">[sort:name]</h2>
+        <div class="banner-breadcrumbs">{pboot:position indextext=HOME}</div>
+      </div>
+    </div>
+  </div>
+  {/pboot:sort}
+  <section class="common-main product-main">
+    <div class="l-wrap">
+      <div class="page-container">
+         {include file=left.html}
+        <div class="page-main">
+          <h1 style="margin-bottom: 10px;">{sort:def1}</h1>
+<div class="prodetails-text" id="def2-html" style="margin-bottom:10px;">{pboot:sort scode="{sort:scode}"}[sort:def2]{/pboot:sort}</div>
+<script>
+(function(){
+    let box = document.getElementById("def2-html");
+    let txt = box.innerText;
+    let temp = document.createElement("div");
+    temp.innerHTML = txt;
+    box.innerHTML = temp.innerHTML;
+})()
+</script>
+
+          <ul class="pro-list list1">
+            {pboot:list num=9 order=sorting}
+            <li>
+              <div class="pro-img"> <a href="[list:link]" title="[list:title]"> <img src="[list:ico]" width="360" height="290" alt="[list:title]"> <em class="iconfont icon-videoplay"></em></a> </div>
+              <div class="pro-info">
+                <div class="title">
+                  <h5><a href="[list:link]">[list:title]</a></h5>
+                </div>
+                <a class="pro-btn" href="[list:link]">view more</a> </div>
+            </li>
+            {/pboot:list}
+          </ul>
+          {pboot:if({page:rows}>0)}
+        <div class="pagebar">
+        <div class="pagination">
+        <a class="page-item page-link hidden-sm" href="{page:index}" title="HOME">HOME</a>
+        {page:numbar}
+        <a class="page-item page-link" href="javascript:;" title="">{page:current}/{page:count}</a>
+        <a class="page-item page-link hidden-sm" href="{page:last}" title="END">END</a>
+        </div>
+        </div>	
+        {else}
+        <div class="tac text-secondary">NO DATA!</div>
+        {/pboot:if}
+
+<div style="margin-bottom: 10px;font-size: 14px;">
+<div class="prodetails-text" id="def3-html" style="margin-bottom:10px;">{pboot:sort scode="{sort:scode}"}[sort:def3]{/pboot:sort}</div>
+<script>
+(function(){
+    let box = document.getElementById("def3-html");
+    let txt = box.innerText;
+    let temp = document.createElement("div");
+    temp.innerHTML = txt;
+    box.innerHTML = temp.innerHTML;
+})()
+</script>
+</section>
+      </div>
+    </div>
+  </section>
+</main>
+{include file=foot.html}
+</body>
+</html>

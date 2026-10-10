@@ -1,0 +1,70 @@
+<header>
+  <div class="head-top">
+    <div class="l-wrap">
+      <p class="text">{label:top}</p>
+    </div>
+  </div>
+  <div class="head-info">
+    <div class="l-wrap">
+      <div class="head-logo"> <a href="{pboot:sitedomain}/" title="{pboot:sitetitle}"><img src="{pboot:sitelogo}"  alt="{pboot:sitetitle}"><span></span></a> </div>
+      <div class="head-list">
+        <div class="item">
+          <div class="icon"><em class="iconfont icon-email"></em></div>
+          <div class="info"><span>Email</span>
+            <p>{pboot:companyemail}</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icon"><em class="iconfont icon-telephone"></em></div>
+          <div class="info"><span>Tel</span>
+            <p><a href="tel:{pboot:companyphone}">{pboot:companyphone}</a></p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icon"><em class="iconfont icon-whatsapp"></em></div>
+          <div class="info"><span>Whatsapp</span>
+            <p>{label:Whatsapp}</p>
+          </div>
+        </div>
+      </div>
+      <div class="head-share">
+        <div class="lang-switch">
+  <a href="https://www.scyuncheng.com/"  class="active" title="English" aria-label="English">EN</a>
+  <a href="https://www.scyuncheng.com/cn/"  title="Chinese" aria-label="Chinese">CN</a>
+  <a href="https://www.scyuncheng.com/es/"  title="Spanish" aria-label="Spanish">ES</a>
+  <a href="https://www.scyuncheng.com/ru/"  title="Russian" aria-label="Russian">RU</a>
+</div>
+      </div>
+      <div class="m-menu"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+  <div class="head-nav">
+    <div class="l-wrap">
+      <ul class="nav-ul">
+        <li id="liHome"> <a href="{pboot:sitedomain}/" {pboot:if(0=='{sort:scode}')}class="inmenu_1"{/pboot:if}>HOME</a></li>
+        {pboot:nav}
+        <li id="liabout-us"> <a {pboot:if('[nav:scode]'=='{sort:tcode}')}class="inmenu_1"{/pboot:if} href="[nav:link]">[nav:name]</a>
+          {pboot:if([nav:soncount]>0)}
+          <ul class="submenu">
+            {pboot:2nav parent=[nav:scode]}
+            <li class="menu-item LiLevel1"> <a href="[2nav:link]">[2nav:name]</a> </li>
+            {/pboot:2nav}
+          </ul>
+          {/pboot:if}
+        </li>
+        {/pboot:nav}
+      </ul>
+      <div class="search-box">
+        <form method="get" action="{pboot:scaction}">
+          <div class="head-search">
+            <button type="button"><em class="iconfont icon-search"></em></button>
+          </div>
+          <div class="search-input">
+            <input type="text" name="keyword" id="keywords" placeholder="Keyword">
+            <button class="search-btn" type="submit"><em class="iconfont icon-search" aria-hidden="true"></em></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>

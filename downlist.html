@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{pboot:if('{sort:name}'=='')}{pboot:pagetitle}{else}{sort:name}{/pboot:if}</title>
+<meta name="keywords" content="{pboot:if('{sort:keywords}'=='')}{pboot:pagekeywords}{else}{sort:keywords}{/pboot:if}">
+<meta name="description" content="{pboot:if('{sort:description}'=='')}{pboot:pagedescription}{else}{sort:description} {sort:name} {page:current}{/pboot:if}">
+<link href="{pboot:sitedomain}/skin/css/swiper.css" rel="stylesheet" media="screen" type="text/css">
+<link href="{pboot:sitedomain}/skin/css/style.css" rel="stylesheet" media="screen" type="text/css">
+<link href="{pboot:sitedomain}/skin/css/list.css" rel="stylesheet" media="screen" type="text/css">
+<link href="{pboot:sitedomain}/skin/css/content.css" rel="stylesheet" media="screen" type="text/css">
+<link rel="canonical" href="{pboot:pageurl}" />
+</head>
+<body>
+<script src="{pboot:sitedomain}/skin/js/jquery.min.js" type="text/javascript"></script> 
+{include file=head.html}
+<main>
+  {pboot:sort scode={sort:tcode}}
+  <div class="banner-inner"> <img src="[sort:pic]" width="100%" class="innerbanners">
+    <div class="banner-content">
+      <div class="container">
+        <h1 class="banner-title" style="font-size: 18px;">[sort:name]</h1>
+        <div class="banner-breadcrumbs">{pboot:position indextext=HOME}</div>
+      </div>
+    </div>
+  </div>
+  {/pboot:sort}
+  <section class="common-main document-main">
+    <div class="l-wrap">
+      <ul class="download-list">
+        {pboot:list num=10 order=sorting}
+        <li>
+          <div class="download-img"> <img src="{pboot:sitedomain}/skin/images/download.png" alt="[list:title]"> </div>
+          <div class="download-info">
+            <div class="download-con">
+              <p class="download-name">[list:title]</p>
+            </div>
+          </div>
+          <a class="download-btn" href="[list:ext_down]" target="_blank"> <i class="fa fa-download"></i> <span>Download</span> </a> </li>
+        {/pboot:list}
+      </ul>
+    </div>
+    {pboot:if({page:rows}>0)}
+        <div class="pagebar">
+        <div class="pagination">
+        <a class="page-item page-link hidden-sm" href="{page:index}" title="HOME">HOME</a>
+        {page:numbar}
+        <a class="page-item page-link" href="javascript:;" title="">{page:current}/{page:count}</a>
+        <a class="page-item page-link hidden-sm" href="{page:last}" title="END">END</a>
+        </div>
+        </div>	
+        {else}
+        <div class="tac text-secondary">NO DATA!</div>
+        {/pboot:if}
+  </section>
+</main>
+{include file=foot.html}
+</body>
+</html>
